@@ -12,7 +12,6 @@ import static mp.data.Const.*;
 import static mp.features.StringMethod.getFirstLetter;
 
 public class WorkerServiceMySQL implements WorkerDAO {
-
     @Override
     public List<Worker> getAllWorkers() {
         return getWorkerList();
@@ -53,22 +52,57 @@ public class WorkerServiceMySQL implements WorkerDAO {
     }
 
     @Override
-    public void addWorker(String surname, String name) {
+    public Worker updateWorkerData(String passport, Worker newWorker) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
         try {
-            String passport = generatePassport(surname, name);
+            final String newPassport = generatePassport(newWorker.getSurname(), newWorker.getName());
+            newWorker.setWorker_Passport(newPassport);
+
+            CONNECTION = DriverManager.getConnection(URL, LOGIN, PASSWORD);
+
+            PREPARED_STATEMENT = CONNECTION.prepareStatement("UPDATE worker SET passport = ?, surname = ?, name = ?" +
+                    " WHERE passport = ?");
+            PREPARED_STATEMENT.setString(1, newPassport);
+            PREPARED_STATEMENT.setString(2, newWorker.getSurname());
+            PREPARED_STATEMENT.setString(3, newWorker.getName());
+            PREPARED_STATEMENT.setString(4, passport);
+            PREPARED_STATEMENT.executeUpdate();
+
+            return getWorkerByPassport(newPassport);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            try {
+                PREPARED_STATEMENT.close();
+                CONNECTION.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    @Override
+    public void addWorker(Worker worker) {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            String passport = generatePassport(worker.getSurname(), worker.getName());
+            worker.setWorker_Passport(passport);
 
             CONNECTION = DriverManager.getConnection(URL, LOGIN, PASSWORD);
             String insert = "INSERT INTO worker(passport, surname, name) VALUES (?, ?, ?)";
             PREPARED_STATEMENT = CONNECTION.prepareStatement(insert);
 
             PREPARED_STATEMENT.setString(1, passport);
-            PREPARED_STATEMENT.setString(2, surname);
-            PREPARED_STATEMENT.setString(3, name);
+            PREPARED_STATEMENT.setString(2, worker.getSurname());
+            PREPARED_STATEMENT.setString(3, worker.getName());
             PREPARED_STATEMENT.execute();
         } catch (SQLException e) {
             throw new RuntimeException(e);
