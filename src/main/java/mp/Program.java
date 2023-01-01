@@ -12,26 +12,35 @@ public class Program {
 
     public static void main(String[] args) {
         WorkerServiceMySQL workerServiceMySQL = new WorkerServiceMySQL();
-        final List<Worker> workers = workerServiceMySQL.getAllWorkers();
+        List<Worker> workers = workerServiceMySQL.getAllWorkers();
         System.out.println("Workers List: " + workers);
         System.out.println("*****************************************************");
 
 
-        workerServiceMySQL.addWorker("Lebedynskaya", "Yaroslava");
-        final List<Worker> updatedWorkersAfterAdded = workerServiceMySQL.getAllWorkers();
-        System.out.println("After Added Worker: ");
-        for (Worker worker : updatedWorkersAfterAdded) {
-            System.out.println(worker);
-        }
+        Worker lebedynskayaYaroslava = new Worker("Lebedynskaya", "Yaroslava");
+        workerServiceMySQL.addWorker(lebedynskayaYaroslava);
+        workers = workerServiceMySQL.getAllWorkers();
+        System.out.println("Workers List After Added: " + workers);
         System.out.println("*****************************************************");
 
 
-        workerServiceMySQL.deleteWorker("UK3LY");
-        final List<Worker> updatedWorkersAfterDeleted = workerServiceMySQL.getAllWorkers();
-        System.out.println("After Deleted Worker: ");
-        for (Worker worker : updatedWorkersAfterDeleted) {
-            System.out.println(worker);
-        }
+        workerServiceMySQL.deleteWorker(lebedynskayaYaroslava.getWorker_Passport());
+        workers = workerServiceMySQL.getAllWorkers();
+        System.out.println("Workers List After Deleted: " + workers);
+        System.out.println("*****************************************************");
+
+        Worker testWorkerForUpdate = new Worker("Robert", "Malkovich");
+        workerServiceMySQL.addWorker(testWorkerForUpdate);
+
+        String testPassport = testWorkerForUpdate.getWorker_Passport();
+        workerServiceMySQL.getWorkerByPassport(testPassport);
+        System.out.println("Before update Robert:  " + workerServiceMySQL.getAllWorkers());
+
+        final Worker updatedWorker = new Worker("Alex", "Rackij");
+        workerServiceMySQL.updateWorkerData(testPassport, updatedWorker);
+        System.out.println("After update Robert:  " + workerServiceMySQL.getAllWorkers());
+        workerServiceMySQL.deleteWorker(updatedWorker.getWorker_Passport());
+        System.out.println("Updated test Worker was deleted!");
         System.out.println("*****************************************************");
 
 

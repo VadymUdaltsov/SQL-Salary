@@ -7,6 +7,14 @@ public class Worker {
     private String surname;
     private String name;
 
+    public Worker() {
+    }
+
+    public Worker(String surname, String name) {
+        this.surname = surname;
+        this.name = name;
+    }
+
     public String getWorker_Passport() {
         return passport;
     }
@@ -36,7 +44,8 @@ public class Worker {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Worker worker = (Worker) o;
-        return passport == worker.passport && Objects.equals(surname, worker.surname) && Objects.equals(name, worker.name);
+        return Objects.equals(passport, worker.passport) && Objects.equals(surname, worker.surname)
+                && Objects.equals(name, worker.name);
     }
 
     @Override
