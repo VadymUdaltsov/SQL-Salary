@@ -129,7 +129,7 @@ public class WorkerServiceMySQL implements WorkerDAO {
 
             PREPARED_STATEMENT = CONNECTION.prepareStatement(delete);
             PREPARED_STATEMENT.setString(1, passport);
-            PREPARED_STATEMENT.executeUpdate();
+            PREPARED_STATEMENT.execute();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } finally {
@@ -141,7 +141,6 @@ public class WorkerServiceMySQL implements WorkerDAO {
             }
         }
     }
-
 
     private static void addWorkersInList(ResultSet resultSet, List<Worker> workers) {
         Worker worker = new Worker();

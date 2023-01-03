@@ -1,5 +1,6 @@
 import mp.dao.WorkerServiceMySQL;
 import mp.tables.Worker;
+import org.apache.commons.lang3.RandomUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -9,9 +10,31 @@ import java.util.List;
 public class WorkerSmokeTests {
     private WorkerServiceMySQL workerService;
 
+    private List<Worker> allWorkers;
+
     @BeforeSuite
     public void conf() {
         workerService = new WorkerServiceMySQL();
+    }
+
+    @Test
+    public void getAllWorkers() {
+        allWorkers = workerService.getAllWorkers();
+
+
+        Assert.assertFalse(allWorkers.isEmpty());
+    }
+
+    @Test
+    public void getWorkerByPassport() {
+        allWorkers = workerService.getAllWorkers();
+        final int randomIndex = RandomUtils.nextInt(0, allWorkers.size() - 1);
+        final Worker randomWorker = allWorkers.get(randomIndex);
+
+        final String passport = randomWorker.getWorker_Passport();
+        final Worker workerByPassport = workerService.getWorkerByPassport(passport);
+
+        Assert.assertTrue(allWorkers.contains(workerByPassport));
     }
 
     @Test
@@ -19,14 +42,36 @@ public class WorkerSmokeTests {
         Worker lebedynskayaYaroslava = new Worker("Lebedynskaya", "Yaroslava");
         workerService.addWorker(lebedynskayaYaroslava);
 
-        final List<Worker> allWorkers = workerService.getAllWorkers();
+        allWorkers = workerService.getAllWorkers();
 
         Assert.assertTrue(allWorkers.contains(lebedynskayaYaroslava));
     }
 
     @Test
+    public void updateWorker() {
+        Worker testWorkerForUpdate = new Worker("Robert", "Malkovich");
+        workerService.addWorker(testWorkerForUpdate);
+
+        allWorkers = workerService.getAllWorkers();
+        Assert.assertTrue(allWorkers.contains(testWorkerForUpdate));
+
+        String testPassport = testWorkerForUpdate.getWorker_Passport();
+
+        final Worker workerForUpdate = new Worker("Alex", "Rackij");
+        workerService.updateWorkerData(testPassport, workerForUpdate);
+
+        allWorkers = workerService.getAllWorkers();
+        Assert.assertTrue(allWorkers.contains(workerForUpdate));
+
+        workerService.deleteWorker(workerForUpdate.getWorker_Passport());
+
+        allWorkers = workerService.getAllWorkers();
+        Assert.assertFalse(allWorkers.contains(workerForUpdate));
+    }
+
+    @Test
     public void deleteWorker() {
-        List<Worker> allWorkers = workerService.getAllWorkers();
+        allWorkers = workerService.getAllWorkers();
         Worker lastWorker;
 
         if (allWorkers.size() != 0) {
@@ -35,8 +80,8 @@ public class WorkerSmokeTests {
 
         workerService.deleteWorker(lastWorker.getWorker_Passport());
 
-        final List<Worker> updatedList = workerService.getAllWorkers();
+        allWorkers = workerService.getAllWorkers();
 
-        Assert.assertFalse(updatedList.contains(lastWorker));
+        Assert.assertFalse(allWorkers.contains(lastWorker));
     }
 }
