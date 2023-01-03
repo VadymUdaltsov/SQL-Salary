@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af529a6b-24d1-49f2-9f1e-bc7ef6f88625" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="af529a6b-24d1-49f2-9f1e-bc7ef6f88625" name="Changes" comment="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/ExpensesServiceMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/dao/ExpensesServiceMySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/data/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/data/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/data/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/data/Month.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/tables/Expenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/tables/Expenses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/tables/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/tables/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +23,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="MP_worker_tests_update_1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="VadymUdaltsov" />
+        <option name="repository" value="SQL-Salary" />
+      </RepoCoordinatesHolder>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,14 +53,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="TestNG.ExpensesSmokeTests.deleteExpensesByMonth">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mp.Program" />
       <module name="SQL-Salary" />
@@ -56,8 +75,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExpensesSmokeTests.addExpensesForMonth" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQL-Salary" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExpensesSmokeTests" />
+      <option name="METHOD_NAME" value="addExpensesForMonth" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpensesSmokeTests.deleteExpensesByMonth" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQL-Salary" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExpensesSmokeTests" />
+      <option name="METHOD_NAME" value="deleteExpensesByMonth" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpensesSmokeTests.getExpensesForMonth" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQL-Salary" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExpensesSmokeTests" />
+      <option name="METHOD_NAME" value="getExpensesForMonth" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpensesSmokeTests.getExpensesForYear" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQL-Salary" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExpensesSmokeTests" />
+      <option name="METHOD_NAME" value="getExpensesForYear" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ExpensesSmokeTests.deleteExpensesByMonth" />
+        <item itemvalue="TestNG.ExpensesSmokeTests.addExpensesForMonth" />
+        <item itemvalue="TestNG.ExpensesSmokeTests.getExpensesForMonth" />
+        <item itemvalue="TestNG.ExpensesSmokeTests.getExpensesForYear" />
         <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>
@@ -71,6 +142,21 @@
       <option name="presentableId" value="Default" />
       <updated>1672479108668</updated>
     </task>
+    <task id="LOCAL-00001" summary="added tests for Worker">
+      <created>1672571468083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672571468083</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program">
+      <created>1672740478684</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672740478684</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,5 +169,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added tests for Worker" />
+    <MESSAGE value="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ExpensesSmokeTests.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SQL_Salary$Program.ic" NAME="Program Coverage Results" MODIFIED="1672567612906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mp.*</FILTER>
+    </SUITE>
   </component>
 </project>

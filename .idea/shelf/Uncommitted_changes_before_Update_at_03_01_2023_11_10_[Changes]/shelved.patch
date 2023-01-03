@@ -1,0 +1,366 @@
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+--- /dev/null	(date 1672569502665)
++++ b/.idea/uiDesigner.xml	(date 1672569502665)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/dbnavigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DBNavigator.Project.DataEditorManager\">\r\n    <record-view-column-sorting-type value=\"BY_INDEX\" />\r\n    <value-preview-text-wrapping value=\"true\" />\r\n    <value-preview-pinned value=\"false\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseBrowserManager\">\r\n    <autoscroll-to-editor value=\"false\" />\r\n    <autoscroll-from-editor value=\"true\" />\r\n    <show-object-properties value=\"true\" />\r\n    <loaded-nodes />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseConsoleManager\">\r\n    <connection id=\"91894e96-eba8-40de-9d89-57d2ba2723a8\">\r\n      <console name=\"Connection\" type=\"STANDARD\" schema=\"mysql\" session=\"Main\" />\r\n    </connection>\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseFileManager\">\r\n    <open-files />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.EditorStateManager\">\r\n    <last-used-providers />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ObjectQuickFilterManager\">\r\n    <last-used-operator value=\"EQUAL\" />\r\n    <filters />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.Settings\">\r\n    <connections>\r\n      <connection id=\"91894e96-eba8-40de-9d89-57d2ba2723a8\" active=\"true\" signed=\"true\">\r\n        <database>\r\n          <name value=\"Connection\" />\r\n          <description value=\"\" />\r\n          <database-type value=\"MYSQL\" />\r\n          <config-type value=\"BASIC\" />\r\n          <database-version value=\"9999.0\" />\r\n          <driver-source value=\"BUILTIN\" />\r\n          <driver-library value=\"\" />\r\n          <driver value=\"\" />\r\n          <url-type value=\"DATABASE\" />\r\n          <host value=\"localhost\" />\r\n          <port value=\"3306\" />\r\n          <database value=\"mysql\" />\r\n          <type value=\"USER_PASSWORD\" />\r\n          <user value=\"Vadym\" />\r\n          <deprecated-pwd value=\"VmFkeW0xMjM0\" />\r\n        </database>\r\n        <properties>\r\n          <auto-commit value=\"false\" />\r\n        </properties>\r\n        <ssh-settings>\r\n          <active value=\"false\" />\r\n          <proxy-host value=\"\" />\r\n          <proxy-port value=\"22\" />\r\n          <proxy-user value=\"\" />\r\n          <deprecated-proxy-pwd value=\"\" />\r\n          <auth-type value=\"PASSWORD\" />\r\n          <key-file value=\"\" />\r\n          <key-passphrase value=\"\" />\r\n        </ssh-settings>\r\n        <ssl-settings>\r\n          <active value=\"false\" />\r\n          <certificate-authority-file value=\"\" />\r\n          <client-certificate-file value=\"\" />\r\n          <client-key-file value=\"\" />\r\n        </ssl-settings>\r\n        <details>\r\n          <charset value=\"UTF-8\" />\r\n          <session-management value=\"true\" />\r\n          <ddl-file-binding value=\"true\" />\r\n          <database-logging value=\"true\" />\r\n          <connect-automatically value=\"true\" />\r\n          <restore-workspace value=\"true\" />\r\n          <restore-workspace-deep value=\"false\" />\r\n          <environment-type value=\"default\" />\r\n          <connectivity-timeout value=\"10\" />\r\n          <idle-time-to-disconnect value=\"30\" />\r\n          <idle-time-to-disconnect-pool value=\"5\" />\r\n          <credential-expiry-time value=\"10\" />\r\n          <max-connection-pool-size value=\"7\" />\r\n          <alternative-statement-delimiter value=\"\" />\r\n        </details>\r\n        <object-filters hide-empty-schemas=\"false\" hide-pseudo-columns=\"false\">\r\n          <object-type-filter>\r\n            <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n            <object-type name=\"USER\" enabled=\"true\" />\r\n            <object-type name=\"ROLE\" enabled=\"true\" />\r\n            <object-type name=\"PRIVILEGE\" enabled=\"true\" />\r\n            <object-type name=\"CHARSET\" enabled=\"true\" />\r\n            <object-type name=\"TABLE\" enabled=\"true\" />\r\n            <object-type name=\"VIEW\" enabled=\"true\" />\r\n            <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\r\n            <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\r\n            <object-type name=\"COLUMN\" enabled=\"true\" />\r\n            <object-type name=\"INDEX\" enabled=\"true\" />\r\n            <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n            <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\r\n            <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\r\n            <object-type name=\"SYNONYM\" enabled=\"true\" />\r\n            <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n            <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n            <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n            <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n            <object-type name=\"TYPE\" enabled=\"true\" />\r\n            <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\r\n            <object-type name=\"ARGUMENT\" enabled=\"true\" />\r\n            <object-type name=\"DIMENSION\" enabled=\"true\" />\r\n            <object-type name=\"CLUSTER\" enabled=\"true\" />\r\n            <object-type name=\"DBLINK\" enabled=\"true\" />\r\n          </object-type-filter>\r\n          <object-name-filters />\r\n        </object-filters>\r\n      </connection>\r\n    </connections>\r\n    <browser-settings>\r\n      <general>\r\n        <display-mode value=\"TABBED\" />\r\n        <navigation-history-size value=\"100\" />\r\n        <show-object-details value=\"false\" />\r\n      </general>\r\n      <filters>\r\n        <object-type-filter>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"true\" />\r\n          <object-type name=\"ROLE\" enabled=\"true\" />\r\n          <object-type name=\"PRIVILEGE\" enabled=\"true\" />\r\n          <object-type name=\"CHARSET\" enabled=\"true\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VIEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\r\n          <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\r\n          <object-type name=\"COLUMN\" enabled=\"true\" />\r\n          <object-type name=\"INDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"true\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\r\n          <object-type name=\"ARGUMENT\" enabled=\"true\" />\r\n          <object-type name=\"DIMENSION\" enabled=\"true\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"true\" />\r\n          <object-type name=\"DBLINK\" enabled=\"true\" />\r\n        </object-type-filter>\r\n      </filters>\r\n      <sorting>\r\n        <object-type name=\"COLUMN\" sorting-type=\"NAME\" />\r\n        <object-type name=\"FUNCTION\" sorting-type=\"NAME\" />\r\n        <object-type name=\"PROCEDURE\" sorting-type=\"NAME\" />\r\n        <object-type name=\"ARGUMENT\" sorting-type=\"POSITION\" />\r\n        <object-type name=\"TYPE ATTRIBUTE\" sorting-type=\"POSITION\" />\r\n      </sorting>\r\n      <default-editors>\r\n        <object-type name=\"VIEW\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"PACKAGE\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"TYPE\" editor-type=\"SELECTION\" />\r\n      </default-editors>\r\n    </browser-settings>\r\n    <navigation-settings>\r\n      <lookup-filters>\r\n        <lookup-objects>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"false\" />\r\n          <object-type name=\"ROLE\" enabled=\"false\" />\r\n          <object-type name=\"PRIVILEGE\" enabled=\"false\" />\r\n          <object-type name=\"CHARSET\" enabled=\"false\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VIEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERIALIZED VIEW\" enabled=\"true\" />\r\n          <object-type name=\"INDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"false\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"DIMENSION\" enabled=\"false\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"false\" />\r\n          <object-type name=\"DBLINK\" enabled=\"true\" />\r\n        </lookup-objects>\r\n        <force-database-load value=\"false\" />\r\n        <prompt-connection-selection value=\"true\" />\r\n        <prompt-schema-selection value=\"true\" />\r\n      </lookup-filters>\r\n    </navigation-settings>\r\n    <dataset-grid-settings>\r\n      <general>\r\n        <enable-zooming value=\"true\" />\r\n        <enable-column-tooltip value=\"true\" />\r\n      </general>\r\n      <sorting>\r\n        <nulls-first value=\"true\" />\r\n        <max-sorting-columns value=\"4\" />\r\n      </sorting>\r\n      <audit-columns>\r\n        <column-names value=\"\" />\r\n        <visible value=\"true\" />\r\n        <editable value=\"false\" />\r\n      </audit-columns>\r\n    </dataset-grid-settings>\r\n    <dataset-editor-settings>\r\n      <text-editor-popup>\r\n        <active value=\"false\" />\r\n        <active-if-empty value=\"false\" />\r\n        <data-length-threshold value=\"100\" />\r\n        <popup-delay value=\"1000\" />\r\n      </text-editor-popup>\r\n      <values-actions-popup>\r\n        <show-popup-button value=\"true\" />\r\n        <element-count-threshold value=\"1000\" />\r\n        <data-length-threshold value=\"250\" />\r\n      </values-actions-popup>\r\n      <general>\r\n        <fetch-block-size value=\"100\" />\r\n        <fetch-timeout value=\"30\" />\r\n        <trim-whitespaces value=\"true\" />\r\n        <convert-empty-strings-to-null value=\"true\" />\r\n        <select-content-on-cell-edit value=\"true\" />\r\n        <large-value-preview-active value=\"true\" />\r\n      </general>\r\n      <filters>\r\n        <prompt-filter-dialog value=\"true\" />\r\n        <default-filter-type value=\"BASIC\" />\r\n      </filters>\r\n      <qualified-text-editor text-length-threshold=\"300\">\r\n        <content-types>\r\n          <content-type name=\"Text\" enabled=\"true\" />\r\n          <content-type name=\"Properties\" enabled=\"true\" />\r\n          <content-type name=\"XML\" enabled=\"true\" />\r\n          <content-type name=\"DTD\" enabled=\"true\" />\r\n          <content-type name=\"HTML\" enabled=\"true\" />\r\n          <content-type name=\"XHTML\" enabled=\"true\" />\r\n          <content-type name=\"Java\" enabled=\"true\" />\r\n          <content-type name=\"SQL\" enabled=\"true\" />\r\n          <content-type name=\"PL/SQL\" enabled=\"true\" />\r\n          <content-type name=\"JSON\" enabled=\"true\" />\r\n          <content-type name=\"JSON5\" enabled=\"true\" />\r\n          <content-type name=\"Groovy\" enabled=\"true\" />\r\n          <content-type name=\"AIDL\" enabled=\"true\" />\r\n          <content-type name=\"YAML\" enabled=\"true\" />\r\n          <content-type name=\"Manifest\" enabled=\"true\" />\r\n        </content-types>\r\n      </qualified-text-editor>\r\n      <record-navigation>\r\n        <navigation-target value=\"VIEWER\" />\r\n      </record-navigation>\r\n    </dataset-editor-settings>\r\n    <code-editor-settings>\r\n      <general>\r\n        <show-object-navigation-gutter value=\"false\" />\r\n        <show-spec-declaration-navigation-gutter value=\"true\" />\r\n        <enable-spellchecking value=\"true\" />\r\n        <enable-reference-spellchecking value=\"false\" />\r\n      </general>\r\n      <confirmations>\r\n        <save-changes value=\"false\" />\r\n        <revert-changes value=\"true\" />\r\n      </confirmations>\r\n    </code-editor-settings>\r\n    <code-completion-settings>\r\n      <filters>\r\n        <basic-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"false\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </basic-filter>\r\n        <extended-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </extended-filter>\r\n      </filters>\r\n      <sorting enabled=\"true\">\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"keyword\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"datatype\" />\r\n        <sorting-element type=\"OBJECT\" id=\"column\" />\r\n        <sorting-element type=\"OBJECT\" id=\"table\" />\r\n        <sorting-element type=\"OBJECT\" id=\"view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"materialized view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"index\" />\r\n        <sorting-element type=\"OBJECT\" id=\"constraint\" />\r\n        <sorting-element type=\"OBJECT\" id=\"trigger\" />\r\n        <sorting-element type=\"OBJECT\" id=\"synonym\" />\r\n        <sorting-element type=\"OBJECT\" id=\"sequence\" />\r\n        <sorting-element type=\"OBJECT\" id=\"procedure\" />\r\n        <sorting-element type=\"OBJECT\" id=\"function\" />\r\n        <sorting-element type=\"OBJECT\" id=\"package\" />\r\n        <sorting-element type=\"OBJECT\" id=\"type\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dimension\" />\r\n        <sorting-element type=\"OBJECT\" id=\"cluster\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dblink\" />\r\n        <sorting-element type=\"OBJECT\" id=\"schema\" />\r\n        <sorting-element type=\"OBJECT\" id=\"role\" />\r\n        <sorting-element type=\"OBJECT\" id=\"user\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"function\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"parameter\" />\r\n      </sorting>\r\n      <format>\r\n        <enforce-code-style-case value=\"true\" />\r\n      </format>\r\n    </code-completion-settings>\r\n    <execution-engine-settings>\r\n      <statement-execution>\r\n        <fetch-block-size value=\"100\" />\r\n        <execution-timeout value=\"20\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <focus-result value=\"false\" />\r\n        <prompt-execution value=\"false\" />\r\n      </statement-execution>\r\n      <script-execution>\r\n        <command-line-interfaces />\r\n        <execution-timeout value=\"300\" />\r\n      </script-execution>\r\n      <method-execution>\r\n        <execution-timeout value=\"30\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <parameter-history-size value=\"10\" />\r\n      </method-execution>\r\n    </execution-engine-settings>\r\n    <operation-settings>\r\n      <transactions>\r\n        <uncommitted-changes>\r\n          <on-project-close value=\"ASK\" />\r\n          <on-disconnect value=\"ASK\" />\r\n          <on-autocommit-toggle value=\"ASK\" />\r\n        </uncommitted-changes>\r\n        <multiple-uncommitted-changes>\r\n          <on-commit value=\"ASK\" />\r\n          <on-rollback value=\"ASK\" />\r\n        </multiple-uncommitted-changes>\r\n      </transactions>\r\n      <session-browser>\r\n        <disconnect-session value=\"ASK\" />\r\n        <kill-session value=\"ASK\" />\r\n        <reload-on-filter-change value=\"false\" />\r\n      </session-browser>\r\n      <compiler>\r\n        <compile-type value=\"KEEP\" />\r\n        <compile-dependencies value=\"ASK\" />\r\n        <always-show-controls value=\"false\" />\r\n      </compiler>\r\n      <debugger>\r\n        <debugger-type value=\"ASK\" />\r\n        <use-generic-runners value=\"true\" />\r\n      </debugger>\r\n    </operation-settings>\r\n    <ddl-file-settings>\r\n      <extensions>\r\n        <mapping file-type-id=\"VIEW\" extensions=\"vw\" />\r\n        <mapping file-type-id=\"TRIGGER\" extensions=\"trg\" />\r\n        <mapping file-type-id=\"PROCEDURE\" extensions=\"prc\" />\r\n        <mapping file-type-id=\"FUNCTION\" extensions=\"fnc\" />\r\n        <mapping file-type-id=\"PACKAGE\" extensions=\"pkg\" />\r\n        <mapping file-type-id=\"PACKAGE_SPEC\" extensions=\"pks\" />\r\n        <mapping file-type-id=\"PACKAGE_BODY\" extensions=\"pkb\" />\r\n        <mapping file-type-id=\"TYPE\" extensions=\"tpe\" />\r\n        <mapping file-type-id=\"TYPE_SPEC\" extensions=\"tps\" />\r\n        <mapping file-type-id=\"TYPE_BODY\" extensions=\"tpb\" />\r\n      </extensions>\r\n      <general>\r\n        <lookup-ddl-files value=\"true\" />\r\n        <create-ddl-files value=\"false\" />\r\n        <synchronize-ddl-files value=\"true\" />\r\n        <use-qualified-names value=\"false\" />\r\n        <make-scripts-rerunnable value=\"true\" />\r\n      </general>\r\n    </ddl-file-settings>\r\n    <general-settings>\r\n      <regional-settings>\r\n        <date-format value=\"MEDIUM\" />\r\n        <number-format value=\"UNGROUPED\" />\r\n        <locale value=\"SYSTEM_DEFAULT\" />\r\n        <use-custom-formats value=\"false\" />\r\n      </regional-settings>\r\n      <environment>\r\n        <environment-types>\r\n          <environment-type id=\"development\" name=\"Development\" description=\"Development environment\" color=\"-2430209/-12296320\" readonly-code=\"false\" readonly-data=\"false\" />\r\n          <environment-type id=\"integration\" name=\"Integration\" description=\"Integration environment\" color=\"-2621494/-12163514\" readonly-code=\"true\" readonly-data=\"false\" />\r\n          <environment-type id=\"production\" name=\"Production\" description=\"Productive environment\" color=\"-11574/-10271420\" readonly-code=\"true\" readonly-data=\"true\" />\r\n          <environment-type id=\"other\" name=\"Other\" description=\"\" color=\"-1576/-10724543\" readonly-code=\"false\" readonly-data=\"false\" />\r\n        </environment-types>\r\n        <visibility-settings>\r\n          <connection-tabs value=\"true\" />\r\n          <dialog-headers value=\"true\" />\r\n          <object-editor-tabs value=\"true\" />\r\n          <script-editor-tabs value=\"false\" />\r\n          <execution-result-tabs value=\"true\" />\r\n        </visibility-settings>\r\n      </environment>\r\n    </general-settings>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+--- a/.idea/dbnavigator.xml	(revision 8b70be3cef74543e5616fab9ddf58e2c1bf0177f)
++++ b/.idea/dbnavigator.xml	(date 1672571204262)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="DBNavigator.Project.DataEditorManager">
+     <record-view-column-sorting-type value="BY_INDEX" />
+-    <value-preview-text-wrapping value="true" />
++    <value-preview-text-wrapping value="false" />
+     <value-preview-pinned value="false" />
+   </component>
+   <component name="DBNavigator.Project.DatabaseBrowserManager">
+@@ -21,11 +21,17 @@
+   </component>
+   <component name="DBNavigator.Project.EditorStateManager">
+     <last-used-providers />
++  </component>
++  <component name="DBNavigator.Project.ExecutionManager">
++    <retain-sticky-names value="false" />
+   </component>
+   <component name="DBNavigator.Project.ObjectQuickFilterManager">
+     <last-used-operator value="EQUAL" />
+     <filters />
+   </component>
++  <component name="DBNavigator.Project.ParserDiagnosticsManager">
++    <diagnostics-history />
++  </component>
+   <component name="DBNavigator.Project.Settings">
+     <connections>
+       <connection id="91894e96-eba8-40de-9d89-57d2ba2723a8" active="true" signed="true">
+@@ -34,7 +40,7 @@
+           <description value="" />
+           <database-type value="MYSQL" />
+           <config-type value="BASIC" />
+-          <database-version value="9999.0" />
++          <database-version value="8.0" />
+           <driver-source value="BUILTIN" />
+           <driver-library value="" />
+           <driver value="" />
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"af529a6b-24d1-49f2-9f1e-bc7ef6f88625\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Jfph8BQavuJzcTY1RxAsdCbovW\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"settings.editor.selected.configurable\": \"preferences.keymap\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Program\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"mp.Program\" />\r\n      <module name=\"SQL-Salary\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"mp.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Program\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"af529a6b-24d1-49f2-9f1e-bc7ef6f88625\" name=\"Changes\" comment=\"\" />\r\n      <created>1672479108668</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1672479108668</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8b70be3cef74543e5616fab9ddf58e2c1bf0177f)
++++ b/.idea/workspace.xml	(date 1672740534012)
+@@ -4,12 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="af529a6b-24d1-49f2-9f1e-bc7ef6f88625" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++    <list default="true" id="af529a6b-24d1-49f2-9f1e-bc7ef6f88625" name="Changes" comment="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program">
++      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -24,7 +22,20 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="MP_worker_tests_update_1" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="recentNewPullRequestHead">
++      <RepoCoordinatesHolder>
++        <option name="owner" value="VadymUdaltsov" />
++        <option name="repository" value="SQL-Salary" />
++      </RepoCoordinatesHolder>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -35,30 +46,82 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "settings.editor.selected.configurable": "preferences.keymap"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+   }
+-}]]></component>
+-  <component name="RunManager">
+-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="mp.Program" />
++}</component>
++  <component name="RunManager" selected="TestNG.WorkerSmokeTests.getAllWorkers">
++    <configuration name="WorkerSmokeTests.addWorker" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="SQL-Salary" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="mp.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="WorkerSmokeTests" />
++      <option name="METHOD_NAME" value="addWorker" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="WorkerSmokeTests.deleteWorker" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="SQL-Salary" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="WorkerSmokeTests" />
++      <option name="METHOD_NAME" value="deleteWorker" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="WorkerSmokeTests.getAllWorkers" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="SQL-Salary" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="WorkerSmokeTests" />
++      <option name="METHOD_NAME" value="getAllWorkers" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="WorkerSmokeTests.getWorkerByPassport" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="SQL-Salary" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="WorkerSmokeTests" />
++      <option name="METHOD_NAME" value="getWorkerByPassport" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="WorkerSmokeTests.updateWorker" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="SQL-Salary" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="WorkerSmokeTests" />
++      <option name="METHOD_NAME" value="updateWorker" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.Program" />
++        <item itemvalue="TestNG.WorkerSmokeTests.getAllWorkers" />
++        <item itemvalue="TestNG.WorkerSmokeTests.updateWorker" />
++        <item itemvalue="TestNG.WorkerSmokeTests.getWorkerByPassport" />
++        <item itemvalue="TestNG.WorkerSmokeTests.deleteWorker" />
++        <item itemvalue="TestNG.WorkerSmokeTests.addWorker" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -71,6 +134,21 @@
+       <option name="presentableId" value="Default" />
+       <updated>1672479108668</updated>
+     </task>
++    <task id="LOCAL-00001" summary="added tests for Worker">
++      <created>1672571468083</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1672571468083</updated>
++    </task>
++    <task id="LOCAL-00002" summary="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program">
++      <created>1672740478684</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1672740478684</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -84,4 +162,14 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="added tests for Worker" />
++    <MESSAGE value="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program" />
++    <option name="LAST_COMMIT_MESSAGE" value="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program" />
++  </component>
++  <component name="com.intellij.coverage.CoverageDataManagerImpl">
++    <SUITE FILE_PATH="coverage/SQL_Salary$Program.ic" NAME="Program Coverage Results" MODIFIED="1672567612906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
++      <FILTER>mp.*</FILTER>
++    </SUITE>
++  </component>
+ </project>
+\ No newline at end of file

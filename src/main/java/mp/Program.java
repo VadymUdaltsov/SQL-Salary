@@ -1,15 +1,17 @@
 package mp;
 
 import mp.dao.ExpensesServiceMySQL;
+import mp.dao.SalaryServiceMySQL;
 import mp.data.Month;
 import mp.tables.Expenses;
+import mp.tables.Salary;
 
 import java.util.List;
 
 public class Program {
 
     public static void main(String[] args) {
-        ExpensesServiceMySQL expensesServiceMySQL = new ExpensesServiceMySQL();
+    /*    ExpensesServiceMySQL expensesServiceMySQL = new ExpensesServiceMySQL();
 
         final Expenses december = expensesServiceMySQL.getExpensesForMonth(2022, "December");
         System.out.println("Expenses for Month: " + december);
@@ -28,6 +30,10 @@ public class Program {
 
         final List<Expenses> expensesForYear = expensesServiceMySQL.getExpensesForYear(2022);
         System.out.println("All expenses for Year: " + expensesForYear);
-        System.out.println("*****************************************************");
+        System.out.println("*****************************************************");*/
+
+        SalaryServiceMySQL service = new SalaryServiceMySQL();
+        final Salary uk1UV = service.getSalaryByPassport("UK1UV");
+        System.out.println(uk1UV);
     }
 }

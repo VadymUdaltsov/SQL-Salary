@@ -6,6 +6,8 @@ import java.util.Objects;
 
 public class Expenses {
     private int year;
+
+    private int month_ID;
     private Month month;
     private int food;
     private int accountant;
@@ -20,6 +22,7 @@ public class Expenses {
     public Expenses(int year, Month month, int food, int accountant, int phone, int internet, int house, int cat) {
         this.year = year;
         this.month = month;
+        month_ID = month.getId();
         this.food = food;
         this.accountant = accountant;
         this.phone = phone;
@@ -34,6 +37,14 @@ public class Expenses {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public int getMonth_ID() {
+        return month_ID;
+    }
+
+    public void setMonth_ID(int month_ID) {
+        this.month_ID = month_ID;
     }
 
     public Month getMonth() {
@@ -97,20 +108,21 @@ public class Expenses {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Expenses expenses = (Expenses) o;
-        return year == expenses.year && food == expenses.food && accountant == expenses.accountant
-                && phone == expenses.phone && internet == expenses.internet && house == expenses.house
-                && cat == expenses.cat && month == expenses.month;
+        return year == expenses.year && month_ID == expenses.month_ID && food == expenses.food
+                && accountant == expenses.accountant && phone == expenses.phone && internet == expenses.internet
+                && house == expenses.house && cat == expenses.cat && month == expenses.month;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(year, month, food, accountant, phone, internet, house, cat);
+        return Objects.hash(year, month_ID, month, food, accountant, phone, internet, house, cat);
     }
 
     @Override
     public String toString() {
         return "Expenses{" +
                 "year=" + year +
+                ", month_ID=" + month_ID +
                 ", month=" + month +
                 ", food=" + food +
                 ", accountant=" + accountant +

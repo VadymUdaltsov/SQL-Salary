@@ -59,7 +59,8 @@ public class ExpensesServiceMySQL implements ExpensesDAO {
         try {
             CONNECTION = DriverManager.getConnection(URL, LOGIN, PASSWORD);
 
-            PREPARED_STATEMENT = CONNECTION.prepareStatement("SELECT * FROM monthly_expenses WHERE year = ?");
+            PREPARED_STATEMENT = CONNECTION.prepareStatement("SELECT * FROM monthly_expenses WHERE year = ? " +
+                    "ORDER BY month_ID");
             PREPARED_STATEMENT.setInt(1, year);
             final ResultSet resultSet = PREPARED_STATEMENT.executeQuery();
 
@@ -94,8 +95,8 @@ public class ExpensesServiceMySQL implements ExpensesDAO {
         try {
             CONNECTION = DriverManager.getConnection(URL, LOGIN, PASSWORD);
 
-            PREPARED_STATEMENT = CONNECTION.prepareStatement("INSERT INTO monthly_expenses(year, month, food, " +
-                    "accountant, number_account, internet, house, cat) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
+            PREPARED_STATEMENT = CONNECTION.prepareStatement("INSERT INTO monthly_expenses(year,month_ID, month, food, " +
+                    "accountant, number_account, internet, house, cat) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)");
             final Field[] fields = expenses.getClass().getDeclaredFields();
 
             final PreparedStatement getMonth = CONNECTION.prepareStatement("SELECT * FROM monthly_expenses WHERE year = ?");
@@ -113,6 +114,9 @@ public class ExpensesServiceMySQL implements ExpensesDAO {
             for (Field field : fields) {
                 field.setAccessible(true);
                 final String type = sqlFieldType.get(listIndex);
+                if (field.getName().equals("month_ID")) {
+                    PREPARED_STATEMENT.setInt(paramIndex, field.getInt(expenses));
+                }
                 if (type.equals("INT")) {
                     PREPARED_STATEMENT.setInt(paramIndex, field.getInt(expenses));
                 } else {
@@ -166,6 +170,7 @@ public class ExpensesServiceMySQL implements ExpensesDAO {
 
     private void initExpenses(ResultSet resultSet, Expenses expenses) throws SQLException {
         expenses.setYear(resultSet.getInt("year"));
+        expenses.setMonth_ID(resultSet.getInt("month_ID"));
         expenses.setMonth(Month.valueOf(resultSet.getString("month").toUpperCase()));
         expenses.setFood(resultSet.getInt("food"));
         expenses.setAccountant(resultSet.getInt("accountant"));

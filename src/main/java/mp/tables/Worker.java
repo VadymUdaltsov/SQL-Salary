@@ -15,6 +15,12 @@ public class Worker {
         this.name = name;
     }
 
+    public Worker(String passport, String surname, String name) {
+        this.passport = passport;
+        this.surname = surname;
+        this.name = name;
+    }
+
     public String getWorker_Passport() {
         return passport;
     }
