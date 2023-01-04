@@ -31,7 +31,7 @@ public class WorkerSmokeTests {
         final int randomIndex = RandomUtils.nextInt(0, allWorkers.size() - 1);
         final Worker randomWorker = allWorkers.get(randomIndex);
 
-        final String passport = randomWorker.getWorker_Passport();
+        final String passport = randomWorker.getPassport();
         final Worker workerByPassport = workerService.getWorkerByPassport(passport);
 
         Assert.assertTrue(allWorkers.contains(workerByPassport));
@@ -55,7 +55,7 @@ public class WorkerSmokeTests {
         allWorkers = workerService.getAllWorkers();
         Assert.assertTrue(allWorkers.contains(testWorkerForUpdate));
 
-        String testPassport = testWorkerForUpdate.getWorker_Passport();
+        String testPassport = testWorkerForUpdate.getPassport();
 
         final Worker workerForUpdate = new Worker("Alex", "Rackij");
         workerService.updateWorkerData(testPassport, workerForUpdate);
@@ -63,7 +63,7 @@ public class WorkerSmokeTests {
         allWorkers = workerService.getAllWorkers();
         Assert.assertTrue(allWorkers.contains(workerForUpdate));
 
-        workerService.deleteWorker(workerForUpdate.getWorker_Passport());
+        workerService.deleteWorker(workerForUpdate.getPassport());
 
         allWorkers = workerService.getAllWorkers();
         Assert.assertFalse(allWorkers.contains(workerForUpdate));
@@ -78,7 +78,7 @@ public class WorkerSmokeTests {
             lastWorker = allWorkers.get(allWorkers.size() - 1);
         } else throw new NullPointerException("List with workers is empty");
 
-        workerService.deleteWorker(lastWorker.getWorker_Passport());
+        workerService.deleteWorker(lastWorker.getPassport());
 
         allWorkers = workerService.getAllWorkers();
 

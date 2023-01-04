@@ -33,7 +33,7 @@ public class WorkerServiceMySQL implements WorkerDAO {
             final ResultSet resultSet = PREPARED_STATEMENT.executeQuery();
             Worker worker = new Worker();
             while (resultSet.next()) {
-                worker.setWorker_Passport(resultSet.getString("passport"));
+                worker.setPassport(resultSet.getString("passport"));
                 worker.setSurname(resultSet.getString("surname"));
                 worker.setName(resultSet.getString("name"));
             }
@@ -60,7 +60,7 @@ public class WorkerServiceMySQL implements WorkerDAO {
         }
         try {
             final String newPassport = generatePassport(newWorker.getSurname(), newWorker.getName());
-            newWorker.setWorker_Passport(newPassport);
+            newWorker.setPassport(newPassport);
 
             CONNECTION = DriverManager.getConnection(URL, LOGIN, PASSWORD);
 
@@ -94,7 +94,7 @@ public class WorkerServiceMySQL implements WorkerDAO {
         }
         try {
             String passport = generatePassport(worker.getSurname(), worker.getName());
-            worker.setWorker_Passport(passport);
+            worker.setPassport(passport);
 
             CONNECTION = DriverManager.getConnection(URL, LOGIN, PASSWORD);
             String insert = "INSERT INTO worker(passport, surname, name) VALUES (?, ?, ?)";
@@ -145,7 +145,7 @@ public class WorkerServiceMySQL implements WorkerDAO {
     private static void addWorkersInList(ResultSet resultSet, List<Worker> workers) {
         Worker worker = new Worker();
         try {
-            worker.setWorker_Passport(resultSet.getString("passport"));
+            worker.setPassport(resultSet.getString("passport"));
             worker.setSurname(resultSet.getString("surname"));
             worker.setName(resultSet.getString("name"));
         } catch (SQLException e) {
@@ -186,7 +186,7 @@ public class WorkerServiceMySQL implements WorkerDAO {
     private String generatePassport(String surname, String name) {
         final List<Worker> workers = getWorkerList();
         final Worker lastWorker = workers.get(workers.size() - 1);
-        final String lastPassport = lastWorker.getWorker_Passport();
+        final String lastPassport = lastWorker.getPassport();
         final String numberInLastPassport = getNumberInPassport(lastPassport);
 
         return "UK" + numberInLastPassport +

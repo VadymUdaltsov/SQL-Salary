@@ -1,17 +1,12 @@
 package mp.dao;
 
 import mp.data.Month;
-import mp.tables.Expenses;
 import mp.tables.Salary;
 import mp.tables.Worker;
-import org.apache.commons.lang.StringUtils;
 
-import java.lang.reflect.Field;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import static mp.data.Const.*;
 
@@ -25,6 +20,8 @@ public class SalaryServiceMySQL implements SalaryDAO {
             throw new RuntimeException(e);
         }
         try {
+            final Worker worker = new WorkerServiceMySQL().getWorkerByPassport(passport);
+
             CONNECTION = DriverManager.getConnection(URL, LOGIN, PASSWORD);
 
             PREPARED_STATEMENT = CONNECTION.prepareStatement("SELECT * FROM job_salary WHERE worker_passport = ?");
@@ -34,7 +31,7 @@ public class SalaryServiceMySQL implements SalaryDAO {
             Salary salary = new Salary();
 
             while (resultSet.next()) {
-                initSalary(resultSet, salary);
+                initSalary(resultSet, salary, worker);
             }
 
             return salary;
@@ -50,11 +47,11 @@ public class SalaryServiceMySQL implements SalaryDAO {
         }
     }
 
-    private void initSalary(ResultSet resultSet, Salary salary) throws SQLException {
-        salary.setMonth(Month.valueOf(resultSet.getString("month").toUpperCase()));
-        salary.setWorker(new Worker(resultSet.getString("worker_passport"),
-                resultSet.getString("surname"),
-                resultSet.getString("name")));
+    private void initSalary(ResultSet resultSet, Salary salary, Worker worker) throws SQLException {
+        salary.setWorker_passport(worker.getPassport());
+        salary.setYear(resultSet.getInt("year"));
+        salary.setMonth_ID( resultSet.getInt("month_ID"));
+        salary.setMonth( Month.valueOf(resultSet.getString("month").toUpperCase()));
         salary.setHours(resultSet.getInt("hours"));
         salary.setRate(resultSet.getFloat("rate"));
         salary.setZus(resultSet.getInt("ZUS"));
