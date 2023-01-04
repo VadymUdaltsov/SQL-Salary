@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af529a6b-24d1-49f2-9f1e-bc7ef6f88625" name="Changes" comment="Added ExpensesTests and Salary">
+    <list default="true" id="af529a6b-24d1-49f2-9f1e-bc7ef6f88625" name="Changes" comment="Fix SalaryService">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mp/dao/ExpensesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mp/dao/ExpensesServiceMySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mp/tables/Expenses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryServiceMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryServiceMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/tables/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/tables/Salary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SalarySmokeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalarySmokeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SalarySmokeTests.addSalaryForMonth">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mp.Test" />
+      <module name="SQL-Salary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SalarySmokeTests.addSalaryForMonth" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQL-Salary" />
       <option name="PACKAGE_NAME" value="" />
@@ -75,18 +88,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SalarySmokeTests" />
       <option name="METHOD_NAME" value="getSalaryByMonth" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WorkerSmokeTests.addWorker" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQL-Salary" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WorkerSmokeTests" />
-      <option name="METHOD_NAME" value="addWorker" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -120,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SalarySmokeTests.addSalaryForMonth" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="TestNG.SalarySmokeTests.getSalaryByMonth" />
+        <item itemvalue="TestNG.SalarySmokeTests.addSalaryForMonth" />
         <item itemvalue="TestNG.WorkerSmokeTests.updateWorker" />
         <item itemvalue="TestNG.WorkerSmokeTests.deleteWorker" />
-        <item itemvalue="TestNG.WorkerSmokeTests.addWorker" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672825643371</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix SalaryService">
+      <created>1672829363040</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672829363040</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,15 +198,21 @@
     <MESSAGE value="added tests for Worker" />
     <MESSAGE value="updated Worker Tests and WorkerServiceMySQL. Deleted Worker from Program" />
     <MESSAGE value="Added ExpensesTests and Salary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ExpensesTests and Salary" />
+    <MESSAGE value="Fix SalaryService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix SalaryService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SalarySmokeTests.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="1" />
+          <line>34</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mp/dao/FullModelServiceMySQL.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -73,7 +73,7 @@ public class SalaryServiceMySQL implements SalaryDAO {
                 } else if (field.getName().equals("month")) {
                     PREPARED_STATEMENT.setString(paramIndex, validMonth);
                 } else {
-                    if (field.getType().getName().equals("float")) {
+                    if (field.getType().getName().equals("Float")) {
                         PREPARED_STATEMENT.setFloat(paramIndex, field.getFloat(salary));
                     } else {
                         PREPARED_STATEMENT.setInt(paramIndex, field.getInt(salary));
