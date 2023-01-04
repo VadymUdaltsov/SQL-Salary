@@ -1,5 +1,6 @@
 import mp.dao.SalaryServiceMySQL;
 import mp.dao.WorkerServiceMySQL;
+import mp.data.Month;
 import mp.tables.Salary;
 import mp.tables.Worker;
 import org.apache.commons.lang3.RandomUtils;
@@ -8,6 +9,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.Objects;
 
 public class SalarySmokeTests {
 
@@ -29,6 +31,20 @@ public class SalarySmokeTests {
         final Worker workerByPassport = workerServiceMySQL.getWorkerByPassport(randomPassport);
 
         final Salary salary = salaryServiceMySQL.getSalaryByPassport(workerByPassport.getPassport());
-        System.out.println("");
+
+        Assert.assertFalse(Objects.isNull(salary));
     }
+
+    @Test
+    public void addSalaryForMonth() {
+        Salary february = new Salary("UK1UV", 2022, 2, Month.FEBRUARY,
+                174, 33.45F, 9, 12);
+        salaryServiceMySQL.addSalaryForMonth(february);
+
+        final Salary salary = salaryServiceMySQL.getSalaryByPassport("UK1UV");
+
+        Assert.assertFalse(Objects.isNull(salary));
+    }
+
+
 }

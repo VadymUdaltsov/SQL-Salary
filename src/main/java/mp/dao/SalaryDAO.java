@@ -4,4 +4,6 @@ import mp.tables.Salary;
 
 public interface SalaryDAO {
     Salary getSalaryByPassport(String passport);
+
+    void addSalaryForMonth(Salary salary);
 }

@@ -18,6 +18,18 @@ public class Salary {
     public Salary() {
     }
 
+    public Salary(String worker_passport, int year, int month_ID, Month month, int hours, float rate, int zus, int vat) {
+        this.worker_passport = worker_passport;
+        this.year = year;
+        this.month_ID = month_ID;
+        this.month = month;
+        this.hours = hours;
+        this.rate = rate;
+        this.zus = zus;
+        this.vat = vat;
+        this.salary = calcSalary();
+    }
+
     public String getWorker_passport() {
         return worker_passport;
     }
@@ -119,6 +131,17 @@ public class Salary {
                 ", vat=" + vat +
                 ", salary=" + salary +
                 '}';
+    }
+
+    private float calcSalary() {
+        if ((hours * rate * 12) > 60000) {
+            setVat(12);
+            salary = (hours * rate) - (hours * rate * (zus + vat) / 100);
+        } else {
+            setVat(0);
+            salary = (hours * rate) - (hours * rate * zus / 100);
+        }
+        return salary;
     }
 }
 

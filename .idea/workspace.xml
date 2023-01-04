@@ -6,17 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="af529a6b-24d1-49f2-9f1e-bc7ef6f88625" name="Changes" comment="Added ExpensesTests and Salary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/ExpensesDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/ExpensesServiceMySQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryServiceMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/dao/SalaryServiceMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/dao/WorkerServiceMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/dao/WorkerServiceMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/data/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/data/Month.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/tables/Expenses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/tables/Salary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mp/tables/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/tables/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExpensesSmokeTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WorkerSmokeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorkerSmokeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mp/tables/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mp/tables/Salary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SalarySmokeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalarySmokeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +57,19 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SalarySmokeTests.getSalaryByMonth">
+  <component name="RunManager" selected="TestNG.SalarySmokeTests.addSalaryForMonth">
+    <configuration name="SalarySmokeTests.addSalaryForMonth" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQL-Salary" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SalarySmokeTests" />
+      <option name="METHOD_NAME" value="addSalaryForMonth" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SalarySmokeTests.getSalaryByMonth" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQL-Salary" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,18 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkerSmokeTests.getWorkerByPassport" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQL-Salary" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WorkerSmokeTests" />
-      <option name="METHOD_NAME" value="getWorkerByPassport" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WorkerSmokeTests.updateWorker" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQL-Salary" />
       <option name="PACKAGE_NAME" value="" />
@@ -127,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SalarySmokeTests.addSalaryForMonth" />
         <item itemvalue="TestNG.SalarySmokeTests.getSalaryByMonth" />
         <item itemvalue="TestNG.WorkerSmokeTests.updateWorker" />
         <item itemvalue="TestNG.WorkerSmokeTests.deleteWorker" />
         <item itemvalue="TestNG.WorkerSmokeTests.addWorker" />
-        <item itemvalue="TestNG.WorkerSmokeTests.getWorkerByPassport" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +158,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672768170946</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added ExpensesTests and Salary">
+      <created>1672825633523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672825633523</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added ExpensesTests and Salary">
+      <created>1672825643371</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672825643371</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,8 +197,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SalarySmokeTests.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="8" />
+          <line>45</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
