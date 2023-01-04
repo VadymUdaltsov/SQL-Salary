@@ -5,9 +5,10 @@ import mp.data.Month;
 import java.util.Objects;
 
 public class Salary {
-
+    private String worker_passport;
+    private int year;
+    private int month_ID;
     private Month month;
-    private Worker worker;
     private int hours;
     private float rate;
     private int zus;
@@ -17,20 +18,36 @@ public class Salary {
     public Salary() {
     }
 
+    public String getWorker_passport() {
+        return worker_passport;
+    }
+
+    public void setWorker_passport(String worker_passport) {
+        this.worker_passport = worker_passport;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public int getMonth_ID() {
+        return month_ID;
+    }
+
+    public void setMonth_ID(int month_ID) {
+        this.month_ID = month_ID;
+    }
+
     public Month getMonth() {
         return month;
     }
 
     public void setMonth(Month month) {
         this.month = month;
-    }
-
-    public Worker getWorker() {
-        return worker;
-    }
-
-    public void setWorker(Worker worker) {
-        this.worker = worker;
     }
 
     public int getHours() {
@@ -78,26 +95,30 @@ public class Salary {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Salary salary1 = (Salary) o;
-        return hours == salary1.hours && Float.compare(salary1.rate, rate) == 0 && zus == salary1.zus
-                && vat == salary1.vat && Float.compare(salary1.salary, salary) == 0 && month == salary1.month
-                && Objects.equals(worker, salary1.worker);
+        return year == salary1.year && month_ID == salary1.month_ID && hours == salary1.hours
+                && Float.compare(salary1.rate, rate) == 0 && zus == salary1.zus && vat == salary1.vat
+                && Float.compare(salary1.salary, salary) == 0
+                && Objects.equals(worker_passport, salary1.worker_passport) && month == salary1.month;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(month, worker, hours, rate, zus, vat, salary);
+        return Objects.hash(worker_passport, year, month_ID, month, hours, rate, zus, vat, salary);
     }
 
     @Override
     public String toString() {
         return "Salary{" +
-                "month=" + month +
-                ", worker=" + worker +
+                "worker_passport='" + worker_passport + '\'' +
+                ", year=" + year +
+                ", month_ID=" + month_ID +
+                ", month=" + month +
                 ", hours=" + hours +
                 ", rate=" + rate +
                 ", zus=" + zus +
-                "%, vat=" + vat +
-                "%, salary=" + salary +
+                ", vat=" + vat +
+                ", salary=" + salary +
                 '}';
     }
 }
+
